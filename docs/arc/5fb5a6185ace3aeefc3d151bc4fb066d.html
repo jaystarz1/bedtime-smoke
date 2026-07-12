@@ -29,6 +29,10 @@
       </audio>
       <p class="lib-note" style="margin-top:8px;">Part of your first week at Hush Hollow.</p>
     </div>
+    <div id="pz" hidden style="margin:0 0 26px;padding:16px 18px;border:1px solid rgba(233,196,106,.5);border-radius:14px;background:rgba(233,196,106,.09);">
+      <p style="margin:0 0 12px;">This story can be <strong>about your child</strong> — their name woven in, tonight and every night. It's free, and adding it unlocks a <strong>bonus week of stories</strong>.</p>
+      <a id="pzlink" class="btn btn-gold" href="#">Personalize your stories — free</a>
+    </div>
     <p>On the Hill in Hush Hollow, where soft grasses grow, sat Hedgehog and Pup in the evening&#x27;s warm glow. And Wink the small firefly blinked gold in the air, a flicker, a shimmer, a wink here and there.</p>
     <p>But earlier, somehow, a small thing went wrong. A word came too quickly. A quiet stayed long. So Hedgehog sat this way, and Pup sat from there, with a soft little sadness afloat in the air.</p>
     <p>They both wished to mend it. They both wished to say the warm little words that had wandered away. But the Hill stretched so wide, and the words were so few, and neither one knew quite the right thing to do.</p>
@@ -47,6 +51,9 @@
 <footer class="foot"><div class="container"><p class="fine">© 2026 Hush Hollow · hushhollow.ca</p></div></footer>
 <script>
 (function(){var h=document.getElementById('stars');if(!h)return;if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var f=document.createDocumentFragment();for(var i=0;i<70;i++){var s=document.createElement('div');s.className='star'+(Math.random()>0.85?' big':'');s.style.left=(Math.random()*100)+'%';s.style.top=(Math.pow(Math.random(),1.4)*90)+'%';s.style.setProperty('--dur',(2.5+Math.random()*5).toFixed(2)+'s');s.style.setProperty('--delay',(Math.random()*6).toFixed(2)+'s');f.appendChild(s);}h.appendChild(f);})();
+// Personalize banner: only for visitors arriving from THEIR nightly email, which
+// carries the family's one-time /name token as ?n=. Bare public URL shows nothing.
+(function(){var n=new URLSearchParams(location.search).get('n');if(!n||!/^[a-f0-9]{16,64}$/.test(n))return;var b=document.getElementById('pz');var a=document.getElementById('pzlink');if(!b||!a)return;a.href='https://onboard.hushhollow.ca/name?token='+encodeURIComponent(n);b.hidden=false;})();
 </script>
 </body>
 </html>
