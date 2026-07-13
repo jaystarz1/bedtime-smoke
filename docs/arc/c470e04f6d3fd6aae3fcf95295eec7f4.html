@@ -58,6 +58,19 @@
 // Personalize banner: only for visitors arriving from THEIR nightly email, which
 // carries the family's one-time /name token as ?n=. Bare public URL shows nothing.
 (function(){var n=new URLSearchParams(location.search).get('n');if(!n||!/^[a-f0-9]{16,64}$/.test(n))return;var b=document.getElementById('pz');var a=document.getElementById('pzlink');if(!b||!a)return;a.href='https://onboard.hushhollow.ca/name?token='+encodeURIComponent(n);b.hidden=false;})();
+// Listening telemetry (first-party, no cookies): page view + play + quartile
+// milestones, attributed via the family's ?n= email token when present (else
+// anonymous aggregate). Plain-text beacon = simple request, no preflight.
+(function(){var API='https://onboard.hushhollow.ca/api/listen';var REF='arc:kindness_A__fabulist';
+var n=new URLSearchParams(location.search).get('n');if(n&&!/^[a-f0-9]{16,64}$/.test(n))n=null;
+function send(e){var p=JSON.stringify({n:n,s:REF,e:e,src:'arc'});
+try{if(!(navigator.sendBeacon&&navigator.sendBeacon(API,p)))fetch(API,{method:'POST',body:p,keepalive:true,mode:'no-cors'});}catch(err){}}
+var seen={};function once(e){if(seen[e])return;seen[e]=1;send(e);}
+once('page');
+document.addEventListener('play',function(ev){if(ev.target.tagName==='AUDIO')once('play');},true);
+document.addEventListener('timeupdate',function(ev){var a=ev.target;if(a.tagName!=='AUDIO'||!a.duration)return;var f=a.currentTime/a.duration;
+if(f>=0.97)once('done');else if(f>=0.75)once('q75');else if(f>=0.5)once('q50');else if(f>=0.25)once('q25');},true);
+})();
 </script>
 </body>
 </html>
