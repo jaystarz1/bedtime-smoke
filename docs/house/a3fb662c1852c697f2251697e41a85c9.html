@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tonight&#x27;s Hush Hollow story — tonight's Hush Hollow story</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="https://hushhollow.ca/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Nunito:wght@600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://hushhollow.ca/css/landing.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+<div id="stars" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav">
+  <a class="brandmark" href="https://hushhollow.ca/" aria-label="Hush Hollow home">
+    <span class="crescent" aria-hidden="true"></span><span class="name">Hush&nbsp;Hollow</span>
+  </a>
+</header>
+<main class="container reader-wrap">
+  <article class="reader">
+    <p class="theme-tag">Tonight's Hush Hollow story · in the house voice</p>
+    <h1>Tonight&#x27;s Hush Hollow story</h1>
+    <p class="byline">Read in a Hush Hollow house voice · ages 2–5</p>
+    <div style="margin:0 0 26px;">
+      <audio controls controlsList="nodownload" preload="none" style="width:100%;border-radius:10px;">
+        <source src="https://stories.hushhollow.ca/house/a3fb662c1852c697f2251697e41a85c9.mp3" type="audio/mpeg">
+      </audio>
+      <p class="lib-note" style="margin-top:8px;">Here to listen for 24 hours.</p>
+    </div>
+    <div id="pz" hidden style="margin:0 0 26px;padding:16px 18px;border:1px solid rgba(233,196,106,.5);border-radius:14px;background:rgba(233,196,106,.09);">
+      <p style="margin:0 0 12px;">This story can be <strong>about your child</strong> — their name woven in, tonight and every night. It's free, and adding it unlocks a <strong>bonus week of stories</strong>.</p>
+      <a id="pzlink" class="btn btn-gold" href="#">Personalize your stories — free</a>
+    </div>
+    <p class="refrain">The Way Home Is Inside</p>
+    <p>Down in Hush Hollow, where the tall grasses lean, the lanterns wake up and the pathway shines green. Fox and Mouse packed a blanket, a basket, a light, and walked to the meadow to picnic at night.</p>
+    <p>They walked past the willow. They walked past the stone. The wood settled quiet. The two were alone. Then Mouse said, &quot;Our doorway is far from us, too. I miss our warm window. I miss it. I do.&quot;</p>
+    <p>Old Bear came out from his den in the hill, with a rumble so gentle it made the night still. His fur held the pine and the warm summer hay, and he sat down beside them and had this to say:</p>
+    <p>&quot;The love of a home is a thing you can hold. It rides in your pocket. It never grows old. It fits in your breathing. It goes where you go, always near, always dear, soft and slow.&quot;</p>
+    <p>The fireflies blinked in the ferns, green and gold. The stream told a story it always has told. The wind in the branches went easy and low, always near, always dear, soft and slow.</p>
+    <p>So Fox thought of supper, the steam and the spoon. And Mouse thought of humming a small sleepy tune. They carried it with them, that warm quiet glow, always near, always dear, soft and slow.</p>
+    <p>They named the small things that they loved, one by one: the mug and the quilt and the day that was done, the step by the door and the lamp turned down low, and the two of them there, and the love that they know.</p>
+    <p>They folded the blanket and turned up the lane, with Bear walking after them, slow as the rain. The window was golden. The doorway was low. Always near, always dear, soft and slow.</p>
+    <p>Inside there was warm milk. Inside there was bread. Then two sleepy yawns, and a pillow, a bed. The Hollow went hushing. The night settled deep. The stream and the ferns and the fireflies sleep.</p>
+    <p>Goodnight to Fox. Goodnight to Mouse. Goodnight to Bear in his hillside house. Goodnight to the Moon and her quiet light. Goodnight, Hush Hollow. Sleep well. Goodnight.</p>
+  </article>
+  <div class="reader-foot">
+    <p>This is the <strong>house voice</strong>. On a voice tier, the very same story is read in <strong>your</strong> voice, with your child's name woven in.</p>
+    <a class="btn btn-gold" href="https://hushhollow.ca/#pricing">Make it theirs</a>
+  </div>
+</main>
+<footer class="foot"><div class="container"><p class="fine">© 2026 Hush Hollow · hushhollow.ca</p></div></footer>
+<script>
+(function(){var h=document.getElementById('stars');if(!h)return;if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var f=document.createDocumentFragment();for(var i=0;i<70;i++){var s=document.createElement('div');s.className='star'+(Math.random()>0.85?' big':'');s.style.left=(Math.random()*100)+'%';s.style.top=(Math.pow(Math.random(),1.4)*90)+'%';s.style.setProperty('--dur',(2.5+Math.random()*5).toFixed(2)+'s');s.style.setProperty('--delay',(Math.random()*6).toFixed(2)+'s');f.appendChild(s);}h.appendChild(f);})();
+// Personalize banner: only for visitors arriving from THEIR nightly email, which
+// carries the family's one-time /name token as ?n=. Bare public URL shows nothing.
+(function(){var n=new URLSearchParams(location.search).get('n');if(!n||!/^[a-f0-9]{16,64}$/.test(n))return;var b=document.getElementById('pz');var a=document.getElementById('pzlink');if(!b||!a)return;a.href='https://onboard.hushhollow.ca/name?token='+encodeURIComponent(n);b.hidden=false;})();
+// Listening telemetry (first-party, no cookies): page view + play + quartile
+// milestones, attributed via the family's ?n= email token when present (else
+// anonymous aggregate). Plain-text beacon = simple request, no preflight.
+(function(){var API='https://onboard.hushhollow.ca/api/listen';var REF='house:2026-08-16';
+var n=new URLSearchParams(location.search).get('n');if(n&&!/^[a-f0-9]{16,64}$/.test(n))n=null;
+function send(e){var p=JSON.stringify({n:n,s:REF,e:e,src:'arc'});
+try{if(!(navigator.sendBeacon&&navigator.sendBeacon(API,p)))fetch(API,{method:'POST',body:p,keepalive:true,mode:'no-cors'});}catch(err){}}
+var seen={};function once(e){if(seen[e])return;seen[e]=1;send(e);}
+once('page');
+document.addEventListener('play',function(ev){if(ev.target.tagName==='AUDIO')once('play');},true);
+document.addEventListener('timeupdate',function(ev){var a=ev.target;if(a.tagName!=='AUDIO'||!a.duration)return;var f=a.currentTime/a.duration;
+if(f>=0.97)once('done');else if(f>=0.75)once('q75');else if(f>=0.5)once('q50');else if(f>=0.25)once('q25');},true);
+})();
+</script>
+</body>
+</html>
