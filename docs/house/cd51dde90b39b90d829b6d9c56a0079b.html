@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tonight&#x27;s Hush Hollow story — tonight's Hush Hollow story</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="https://hushhollow.ca/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Nunito:wght@600;700;800&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://hushhollow.ca/css/landing.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+<div id="stars" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav">
+  <a class="brandmark" href="https://hushhollow.ca/" aria-label="Hush Hollow home">
+    <span class="crescent" aria-hidden="true"></span><span class="name">Hush&nbsp;Hollow</span>
+  </a>
+</header>
+<main class="container reader-wrap">
+  <article class="reader">
+    <p class="theme-tag">Tonight's Hush Hollow story · in the house voice</p>
+    <h1>Tonight&#x27;s Hush Hollow story</h1>
+    <p class="byline">Read in a Hush Hollow house voice · ages 2–5</p>
+    <div style="margin:0 0 26px;">
+      <audio controls controlsList="nodownload" preload="none" style="width:100%;border-radius:10px;">
+        <source src="https://stories.hushhollow.ca/house/cd51dde90b39b90d829b6d9c56a0079b.mp3" type="audio/mpeg">
+      </audio>
+      <p class="lib-note" style="margin-top:8px;">Here to listen for 24 hours.</p>
+    </div>
+    <div id="pz" hidden style="margin:0 0 26px;padding:16px 18px;border:1px solid rgba(233,196,106,.5);border-radius:14px;background:rgba(233,196,106,.09);">
+      <p style="margin:0 0 12px;">This story can be <strong>about your child</strong> — their name woven in, tonight and every night. It's free, and adding it unlocks a <strong>bonus week of stories</strong>.</p>
+      <a id="pzlink" class="btn btn-gold" href="#">Personalize your stories — free</a>
+    </div>
+    <p class="refrain">One Star, Two Stars</p>
+    <p>Down in Hush Hollow the willow leaned low, and under the willow the stream ran slow. The water went over the stones without sound. The evening came soft to the cool of the ground.</p>
+    <p>But Fox and Mouse had the day still awake in their hands, a whole busy day full of games and of plans. Their eyes would not settle. Their toes would not rest. The day kept on humming inside of each chest.</p>
+    <p>So down to the water the two of them came, and Frog on his lily pad called them by name. He puffed his green throat like a slow little drum. &quot;Sit here,&quot; said the Frog. &quot;Let the quiet things come.&quot;</p>
+    <p>One star, two stars, soft and slow. That is the way that the long days go.</p>
+    <p>&quot;Count one for the stream and the bends that it takes. Count two for the reed and the ring that it makes. Count three for the pebble, all smooth in your hand. Count four for the cool of the wet river sand.&quot;</p>
+    <p>So Mouse counted slowly. And Fox counted too. The stream took the numbers and carried them through. And every soft number they gave to the stream went out with the water and off like a dream.</p>
+    <p>One star, two stars, soft and slow. That is the way that the long days go.</p>
+    <p>Frog blinked his gold eyes. His webbed toes went still. &quot;Now breathe with the water. Breathe out. Breathe until the day that was busy has drifted downstream, and all that is left of it turns into dream.&quot;</p>
+    <p>So Fox breathed. And Mouse breathed. And out went the day, around the near bend and then softly away. Their eyes had grown heavy, their breathing gone deep, and the stream said the last of the evening to sleep.</p>
+    <p>Then up the small path where the lamp glow was gold, back home to the Hollow, the blankets, the fold. One star at the window, and then there were two. The dark came down gentle. The night came down blue. Two beds in the dark and the hush of a door. The day has been counted. It asks you no more.</p>
+    <p>One star, two stars, soft and slow. That is the way that the long days go.</p>
+    <p>Goodnight to the water. Goodnight to the stones. Goodnight to the Frog and his low sleepy tones. Goodnight to the Moon and her quiet, kind light. Goodnight, Fox. Goodnight, Mouse. Sleep well and sleep tight. Goodnight, Hush Hollow. The lamps are turned low. One star, two stars. Now sleep, soft and slow.</p>
+  </article>
+  <div class="reader-foot">
+    <p>This is the <strong>house voice</strong>. On a voice tier, the very same story is read in <strong>your</strong> voice, with your child's name woven in.</p>
+    <a class="btn btn-gold" href="https://hushhollow.ca/#pricing">Make it theirs</a>
+  </div>
+</main>
+<footer class="foot"><div class="container"><p class="fine">© 2026 Hush Hollow · hushhollow.ca</p></div></footer>
+<script>
+(function(){var h=document.getElementById('stars');if(!h)return;if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var f=document.createDocumentFragment();for(var i=0;i<70;i++){var s=document.createElement('div');s.className='star'+(Math.random()>0.85?' big':'');s.style.left=(Math.random()*100)+'%';s.style.top=(Math.pow(Math.random(),1.4)*90)+'%';s.style.setProperty('--dur',(2.5+Math.random()*5).toFixed(2)+'s');s.style.setProperty('--delay',(Math.random()*6).toFixed(2)+'s');f.appendChild(s);}h.appendChild(f);})();
+// Personalize banner: only for visitors arriving from THEIR nightly email, which
+// carries the family's one-time /name token as ?n=. Bare public URL shows nothing.
+(function(){var n=new URLSearchParams(location.search).get('n');if(!n||!/^[a-f0-9]{16,64}$/.test(n))return;var b=document.getElementById('pz');var a=document.getElementById('pzlink');if(!b||!a)return;a.href='https://onboard.hushhollow.ca/name?token='+encodeURIComponent(n);b.hidden=false;})();
+// Listening telemetry (first-party, no cookies): page view + play + quartile
+// milestones, attributed via the family's ?n= email token when present (else
+// anonymous aggregate). Plain-text beacon = simple request, no preflight.
+(function(){var API='https://onboard.hushhollow.ca/api/listen';var REF='house:2026-08-22';
+var n=new URLSearchParams(location.search).get('n');if(n&&!/^[a-f0-9]{16,64}$/.test(n))n=null;
+function send(e){var p=JSON.stringify({n:n,s:REF,e:e,src:'arc'});
+try{if(!(navigator.sendBeacon&&navigator.sendBeacon(API,p)))fetch(API,{method:'POST',body:p,keepalive:true,mode:'no-cors'});}catch(err){}}
+var seen={};function once(e){if(seen[e])return;seen[e]=1;send(e);}
+once('page');
+document.addEventListener('play',function(ev){if(ev.target.tagName==='AUDIO')once('play');},true);
+document.addEventListener('timeupdate',function(ev){var a=ev.target;if(a.tagName!=='AUDIO'||!a.duration)return;var f=a.currentTime/a.duration;
+if(f>=0.97)once('done');else if(f>=0.75)once('q75');else if(f>=0.5)once('q50');else if(f>=0.25)once('q25');},true);
+})();
+</script>
+</body>
+</html>
